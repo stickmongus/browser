@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY STUDIO HUB</title>
+    <style>
+        /* 기본 배경 및 폰트 설정 (다크 테마) */
+        body {
+            background-color: #202124;
+            color: #ffffff;
+            font-family: '맑은 고딕', 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* 메인 컨테이너 */
+        .hub-container {
+            background-color: #2B2D30;
+            width: 100%;
+            max-width: 400px;
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        /* 프로필 이미지 */
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            background-color: #3C3F44;
+            border-radius: 50%;
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* 닉네임 및 소개 */
+        h1 {
+            font-size: 24px;
+            margin: 0 0 10px 0;
+            color: #8AB4F8; /* 포인트 블루 색상 */
+        }
+        
+        p {
+            font-size: 14px;
+            color: #9AA0A6;
+            margin: 0 0 30px 0;
+            line-height: 1.5;
+        }
+
+        /* 링크 버튼 컨테이너 */
+        .link-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* 링크 버튼 디자인 */
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #3C3F44;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+
+        /* 마우스 올렸을 때 애니메이션 (Hover 효과) */
+        .link-btn:hover {
+            background-color: #4A4D53;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 버튼별 고유 색상 포인트 */
+        .btn-youtube:hover { border-left: 5px solid #FF0000; }
+        .btn-discord:hover { border-left: 5px solid #5865F2; }
+        .btn-steam:hover { border-left: 5px solid #66C0F4; }
+        .btn-browser:hover { border-left: 5px solid #8AB4F8; }
+
+        /* 하단 푸터 */
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #5F6368;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hub-container">
+        <!-- 프로필 아이콘 -->
+        <div class="profile-img">🚀</div>
+        
+        <!-- 타이틀 및 설명 -->
+        <h1>sometester</h1>
+        <p>환영합니다!<br>제가 만든 프로그램과 커뮤니티 링크입니다.</p>
+
+        <!-- 버튼들 -->
+        <div class="link-group">
+            <!-- 유튜브 버튼 -->
+            <a href="https://www.youtube.com/@some_tester" target="_blank" class="link-btn btn-youtube">
+                📺 유튜브 채널 구경하기
+            </a>
+
+            <!-- 디스코드 버튼 -->
+            <a href="https://discord.gg/FcfzH4pfNx" target="_blank" class="link-btn btn-discord">
+                💬 디스코드 커뮤니티 참여
+            </a>
+
+            <!-- 스팀 다운로드 버튼 (새로운 링크 적용 완료) -->
+            <a href="https://drive.google.com/file/d/1aMvdqj_2gBOWmpdPTy77ZXrDq-smc1p6/view?usp=drive_link" target="_blank" class="link-btn btn-steam">
+                🎮 스팀(Steam) 다운로드
+            </a>
+
+            <!-- 브라우저 다운로드 버튼 -->
+            <a href="https://drive.google.com/file/d/1-SuhqCkC-Nn5ezOe5hwiZil9hGF0Xp99/view?usp=drive_link" target="_blank" class="link-btn btn-browser">
+                🌐 cBrowser 다운로드 (인터넷 뚫기)
+            </a>
+        </div>
+
+        <!-- 하단 문구 -->
+        <div class="footer">
+            © 2026 sometester. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
